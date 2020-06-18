@@ -1,0 +1,285 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+     <!-- Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <style>
+      body{
+        background: rgb(109,79,209);
+background: linear-gradient(8deg, rgba(109,79,209,0.8939950980392157) 22%, rgba(175,175,175,0.4962359943977591) 100%);
+      }
+      #card-efecto{
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      }
+     
+   </style>
+   
+   <!----> 
+  
+    <title>index</title>
+  </head>
+
+<header>
+  <nav class="navbar navbar-expand-lg navbar-light bg-info mb-3 ">
+    <a class="navbar-brand text-white" href="#">Navbar</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+              <li class="nav-item active">
+                   <a class="nav-link text-white" href="index.html">Productos<span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                   <button id="btn-crearCuenta" class="btn text-white" >Creá una cuenta</button>
+              </li>
+              
+      </div>
+  
+  <div>
+  
+ 
+ 
+  <div class=" d-inline-block">
+  
+          
+  <button id="btn-iniciar" class="btn text-white">Iniciar sesión</button>
+             
+          
+     
+      
+  </div> 
+
+</div>
+  
+  
+  </nav>
+</header>
+
+<body>
+ 
+
+<div class="container">  
+    <div id="tarjeta" class="row" >  
+      <!--data desde js-->   
+        
+  </div>
+</div>         
+
+<!-- Modal registro usuario -->
+
+<div class="modal fade" id="modal-registro" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+     
+
+      <div class="modal-body">
+        <button type="button" class="close mb-3" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        <div class="container">
+
+            <form >
+              <div class="form-group">
+                <label for="nombreusuario"></label>
+                <input type="text" class="form-control" id="nameNewUser" placeholder="Nombre" aria-describedby="textHelp" name="nameNewUser" required>
+                <small id="emailHelp" class="form-text text-muted"></small>
+              </div>
+              <div class="form-group">
+                <label for="nombreEmail"></label>
+                <input type="text" class="form-control" id="lastNameNewUser" placeholder="Apellido" aria-describedby="textHelp" name="lastNameNewUser" required>
+                <small id="emailHelp" class="form-text text-muted"></small>
+              </div>
+              <div class="form-group">
+                <label for="nombreEmail"></label>
+                <input type="email" class="form-control" id="emailNewUser" placeholder="correo electrónico" aria-describedby="emailHelp" name="emailNewUser" required> 
+                <small id="emailHelp" class="form-text text-muted"></small>
+              </div>
+            
+            <div class="form-group">
+                <label for="password"><span class="req"> </span>  </label>
+                    <input required name="password" type="password" class="form-control inputpass" minlength="4" maxlength="16" placeholder="Ingresa tu contraseña" id="pass1" required/> </p>
+                <label for="password"><span class="req"></span>  </label>
+                    <input required name="password2" type="password" class="form-control inputpass" minlength="4" maxlength="16" placeholder="Ingresa tu contraseña nuevamente"  id="pass2"  required/>
+                <span id="confirmMessage" class="confirmMessage"></span>
+            </div>
+        
+              <button id="btn-registrar" type="submit" class="btn btn-primary mt-3" value="registrar">Registrar</button>
+        </form> 
+
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+
+<!-- Modal inicio usuario -->
+
+<div class="modal fade" id="modal-nuevo" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+     
+
+      <div class="modal-body">
+        <button type="button" class="close mb-3" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+<div class="container">
+ 
+ 
+  <form>
+
+      <div class="form-group">
+        <label for="exampleInputEmail1">Correo Electrónico</label>
+        <input type="email" class="form-control" id="useremail" name="useremail" aria-describedby="emailHelp" required>
+        
+      </div>
+      <div class="form-group">
+        <label for="exampleInputPassword1">Contraseña</label>
+        <input type="password" class="form-control" id="userpass" name="userpass" required>
+      </div>
+     <div class="pt-3">
+      <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+      <button id="btn-guardarusuario" type="submit" class="btn btn-primary">Iniciar</button>
+     </div> 
+  </form>
+      </div>
+    </div>
+   </div>
+  </div>
+</div>
+
+
+
+
+
+<!-- Modal mostrar Producto -->
+<div class="modal fade" id="modal-mostrar-producto" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div  class="modal-header">
+        
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        <div id="modal-id"></div>
+      </div>
+<!--Informacion del body// -->
+  <div class="modal-body">
+
+
+
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="row">
+            <div class="col-md-6">
+              <div id="imagen">
+                  <!--imagen-->
+              </div>
+
+
+            </div>
+            <div class="col-md-6">
+              <h5 class="modal-title" id="titulo-modal-producto"></h5>
+              <div id="descripcion" >
+                  <!--acá va la descripción productos.js-->
+              </div>  
+             
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-4">
+              <div> <var id="precio" class="price h5 ">$precio</var></div>
+            </div>
+
+            <div class="col-md-4 d-flex flex-row bd-highlight">
+
+              <div class="form-group col bd-highlight">
+                
+                 <div class="mt-1">
+                 <div>
+                  <select id="producto" name="producto" onchange="ShowSelected();">
+                    <option selected>Talle</option>
+                      <option value="2">S</option>
+                      <option value="3">M</option>
+                      <option value="4">L</option>
+                      <option value="5">XL</option>
+                   </select>
+                  </div>
+                 </div>
+              </div>
+
+
+              <!---->
+              <div class="form-group col  bd-highlight">
+               
+                 <div class="mt-1">
+                 <div>
+                <select id="color" name="color" onchange="ShowSelectedColor();">
+                  <option selected>color</option>
+  
+                </select>
+            
+                </div>
+              </div>
+              </div>
+
+
+             </div>
+
+            <div  class="col-md-4">
+                <div class="mt-1" id="cant-stock"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div> <!--row-->
+
+  <div class="modal-footer">
+    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+    <button id="btnAgregarCarrito" type="button" class="btn btn-outline-primary">Agregar al Carrito</button>
+ </div>
+
+
+</div> <!--contenedor-->
+</div>
+
+   
+
+</div>
+</div>
+</div> <!--modal-->
+
+
+
+    
+   
+
+
+    <!-- Optional JavaScript --s>
+
+    
+      <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    
+    <script src="/js/productos.js"></script> 
+    <script src="js/login.js"></script>
+
+</body>
+</html>
